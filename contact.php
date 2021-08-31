@@ -18,10 +18,7 @@
     </head>
     
     <body>
-    
-
-    
-    
+  
     <!-- ***** Header Area Start ***** -->
     <?php include "page-header.php" ?>
     <!-- ***** Header Area End ***** -->
