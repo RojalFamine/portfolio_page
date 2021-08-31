@@ -19,7 +19,46 @@
     
     <body>
     
-    <?php include "page-header.php" ?>
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+    
+    
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                  <nav class="main-nav">
+                      <!-- ***** Logo Start ***** -->
+                      <a href="index.html" class="logo"><img class="logo-b" style="height: 42px;" src="assets/images/martina.png" alt=""><img class="logo-w" style="height: 42px;" src="assets/images/martina-white.png" alt=""></a>
+                      <!-- ***** Logo End ***** -->
+                      <!-- ***** Menu Start ***** -->
+                      <ul class="nav">
+                          <li><a href="about.html">.aboutMe( )</a></li>
+                          <li><a href="portfolio.html">.myProjects( )</a></li>
+                          <li><a href="freetime.html">.myFreeTime( )</a></li>
+                          <li><a href="contact.html">.contacts( )</a></li> 
+                      </ul>         
+                      <a class='menu-trigger'>
+                          <span>Menu</span>
+                      </a>
+                      <!-- ***** Menu End ***** -->
+                  </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
 
     <section class="section about">
       <div class="container"> 
@@ -185,7 +224,21 @@
     </div>
     <!-- ***** Down button End ***** -->
 
-    <?php include "footer.php" ?>
+    <!-- ***** Footer Start ***** -->
+    <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                  <p>
+                      Copyright © 2020 Company Name
+                      - Template by: <a href="https://www.phpjabbers.com/">PHPJabbers.com</a>
+                  </p>
+              </div>
+          </div>
+      </div>
+    </footer>
+
+    <!-- ***** Footer End ***** -->
 
     <!-- jQuery -->
     <script src="assets/js/jquery-2.1.0.min.js"></script>
