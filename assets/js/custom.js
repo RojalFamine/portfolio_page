@@ -9,7 +9,7 @@
 	var logoB = $(".logo-b");
 	var logoW = $(".logo-w");
 
-	if(document.location.pathname === "/home.php") {
+	if(document.location.pathname === "/home.html") {
 		logoW.addClass("hide-logo");
 	}
 	else {
@@ -25,7 +25,7 @@
 	  var logoB = $(".logo-b");
 	  var logoW = $(".logo-w");
 
-	  if(document.location.pathname === "/home.php") {
+	  if(document.location.pathname === "/home.html") {
 		if (scroll >= box - header) {
 			$("header").addClass("background-header");
 		} else {
