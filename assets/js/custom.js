@@ -17,7 +17,7 @@
 		logoB.addClass("hide-logo");
 	}
 
-	alert(window.location.origin);
+	alert(window.location.pathname);
 
 	$(window).scroll(function() {
 	  var scroll = $(window).scrollTop();
