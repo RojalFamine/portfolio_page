@@ -9,7 +9,10 @@
 	var logoB = $(".logo-b");
 	var logoW = $(".logo-w");
 
-	if(document.location.pathname === "/portfolio_page/") {
+	if(
+		document.location.pathname === "/portfolio_page/" ||
+		document.location.pathname === "/portfolio_page/index.html/"
+	) {
 		logoW.addClass("hide-logo");
 		
 	}
@@ -27,7 +30,10 @@
 	  var logoB = $(".logo-b");
 	  var logoW = $(".logo-w");
 
-	  if(document.location.pathname === "/portfolio_page/") {
+	  if(
+		  document.location.pathname === "/portfolio_page/" ||
+		  document.location.pathname === "/portfolio_page/index.html/"
+	    ) {
 		if (scroll >= box - header) {
 			$("header").addClass("background-header");
 		} else {
