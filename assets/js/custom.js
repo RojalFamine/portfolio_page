@@ -11,7 +11,7 @@
 
 	if(
 		document.location.pathname === "/portfolio_page/" ||
-		document.location.pathname === "/portfolio_page/index.html/"
+		document.location.pathname === "/portfolio_page/index.html"
 	) {
 		logoW.addClass("hide-logo");
 		
@@ -32,7 +32,7 @@
 
 	  if(
 		  document.location.pathname === "/portfolio_page/" ||
-		  document.location.pathname === "/portfolio_page/index.html/"
+		  document.location.pathname === "/portfolio_page/index.html"
 	    ) {
 		if (scroll >= box - header) {
 			$("header").addClass("background-header");
