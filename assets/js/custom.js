@@ -9,16 +9,15 @@
 	var logoB = $(".logo-b");
 	var logoW = $(".logo-w");
 
-	if(
-		document.location.pathname === "https://rojalfamine.github.io/portfolio_page/" ||
-		document.location.pathname === "https://rojalfamine.github.io/portfolio_page/index.html"
-	) {
+	if(document.location.pathname === "https://rojalfamine.github.io/portfolio_page/") {
 		logoW.addClass("hide-logo");
 		
 	}
 	else {
 		logoB.addClass("hide-logo");
 	}
+
+	alert(window.location.pathname);
 
 	$(window).scroll(function() {
 	  var scroll = $(window).scrollTop();
@@ -28,10 +27,7 @@
 	  var logoB = $(".logo-b");
 	  var logoW = $(".logo-w");
 
-	  if(
-		  document.location.pathname === "https://rojalfamine.github.io/portfolio_page/" ||
-		  document.location.pathname === "https://rojalfamine.github.io/portfolio_page/index.html"
-		) {
+	  if(document.location.pathname === "https://rojalfamine.github.io/portfolio_page/") {
 		if (scroll >= box - header) {
 			$("header").addClass("background-header");
 		} else {
