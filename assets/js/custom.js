@@ -20,8 +20,6 @@
 		logoB.addClass("hide-logo");
 	}
 
-	alert(window.location.pathname);
-
 	$(window).scroll(function() {
 	  var scroll = $(window).scrollTop();
 	  var box = $(window).height();
@@ -200,4 +198,11 @@ function displayComment(id, data) {
     new_comment.setAttribute('data-id', id);
 
     comment_block.prepend(new_comment);
+}
+
+function myScroll(event) {
+	event.preventDefault();
+	document.querySelector('#my-skills').scrollIntoView({ 
+		behavior: 'smooth' 
+	});
 }

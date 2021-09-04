@@ -345,6 +345,10 @@ h3 {
   color: #919191;
 }
 
+.down a:hover .icon-to-change {
+  color: #6593c8;
+}
+
 /* 
 ---------------------------------------------
 header
@@ -853,6 +857,77 @@ body .home-description a {
 
 /*
 ---------------------------------------------
+My free time
+---------------------------------------------
+*/
+.carousel-inner .carousel-img {
+  height: 700px;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center center !important;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  background: transparent;
+  border: 0;
+  height: 700px;
+}
+
+.carousel-caption {
+  position: unset;
+  width: 80%;
+  margin: 10px auto 50px;
+}
+
+.carousel-caption h3 {
+  padding-bottom: 20px;
+}
+
+.carousel-caption p {
+  text-align: left;
+}
+
+.comments_section h3 {
+  margin: 50px auto 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: 80%;
+}
+
+.comments_section .comment_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.comments_section .comment_form textarea {
+  line-height: 26px;
+}
+
+.comment__item {
+  background: #C4C4C4;
+  -webkit-box-shadow: -7px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: -7px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 0;
+  padding: .75rem 1.25rem;
+}
+
+.comments-block {
+  width: 80%;
+  margin: 50px auto;
+}
+
+/*
+---------------------------------------------
 About
 ---------------------------------------------
 */
@@ -867,6 +942,10 @@ About
   color: #fff;
   margin-bottom: 70px;
   text-align: center;
+}
+
+.about-main-text {
+  margin-bottom: 50px;
 }
 
 .home-about > .container {
@@ -1040,6 +1119,30 @@ Portfolio
   background: url("../images/balticvcsummit2018.jpg");
 }
 
+#my-pages .page-item5 {
+  background: url("../images/linkedin_screen.png");
+}
+
+#my-pages .page-item6 {
+  background: url("../images/todo_screen.png");
+}
+
+#my-pages .page-item7 {
+  background: url("../images/tictactoeJQ_screen.png");
+}
+
+#my-pages .page-item8 {
+  background: url("../images/comment_screen.png");
+}
+
+#my-pages .page-item9 {
+  background: url("../images/books_screen.png");
+}
+
+#my-pages .page-item10 {
+  background: url("../images/php_games_screen.png");
+}
+
 .pages-field {
   display: -ms-grid;
   display: grid;
@@ -1068,6 +1171,7 @@ Portfolio
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   margin: 20px;
@@ -1143,6 +1247,13 @@ Portfolio
   transition: 1.2s;
 }
 
+#my-pages .page-item .down-content p {
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+}
+
 #my-pages .page-item .down-content .my-button {
   opacity: 0;
   -webkit-transition: 1.2s;
@@ -1163,10 +1274,33 @@ Portfolio
   transition: 1.2s;
 }
 
+#my-pages .page-item .down-content:hover p {
+  opacity: 1;
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+}
+
 #my-pages .page-item .down-content:hover .my-button {
   opacity: 1;
   -webkit-transition: 1.2s;
   transition: 1.2s;
+}
+
+.work-header {
+  margin: 50px 20px 20px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  letter-spacing: 0.18538em;
+  color: #fff;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
 }
 
 /* 
@@ -1519,17 +1653,34 @@ footer {
 }
 
 footer p {
-  color: #232d39;
-  font-size: 13px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 footer p a {
   cursor: pointer;
-  color: #6593c8;
+  color: #fff;
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+  font-size: 20px;
+  padding: 10px;
 }
 
 footer p a:hover {
   color: #6593c8;
+}
+
+footer .col-lg-12 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* 
