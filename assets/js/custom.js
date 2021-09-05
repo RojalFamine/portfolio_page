@@ -10,6 +10,7 @@
 	var logoW = $(".logo-w");
 
 	if(
+		window.matchMedia("(max-width: 770px)") &&
 		document.location.pathname === "/portfolio_page/" ||
 		document.location.pathname === "/portfolio_page/index.html"
 	) {
