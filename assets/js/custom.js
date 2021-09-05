@@ -228,7 +228,7 @@ jQuery(document).ready(function() {
         var postdata = $('.contact-me form').serialize();
         $.ajax({
             type: 'POST',
-            url: 'https://skola-comment.000webhostapp.com/contact.php',
+            url: 'https://skola-comment.000webhostapp.com/contact.php/',
             data: postdata,
             dataType: 'json',
             success: function(json) {
