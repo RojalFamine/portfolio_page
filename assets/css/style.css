@@ -1970,6 +1970,18 @@ responsive
   .contact-form .my-area.my-button::after {
     top: -93px;
   }
+  .logo-b {
+    display: none;
+  }
+  .logo-w {
+    display: initial;
+  }
+  .background-header .logo-b {
+    display: initial;
+  }
+  .background-header .logo-w {
+    display: none;
+  }
 }
 
 @media (max-width: 500px) {
