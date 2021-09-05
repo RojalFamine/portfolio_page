@@ -11,7 +11,7 @@
 	var media = window.matchMedia("(min-width: 770px)");
 
 	if(
-		(media.matches) &&
+		media.matches &&
 		document.location.pathname === "/portfolio_page/" ||
 		document.location.pathname === "/portfolio_page/index.html"
 	) {
