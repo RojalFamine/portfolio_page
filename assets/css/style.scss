@@ -290,6 +290,10 @@ h3 {
   }
 }
 
+button:focus {
+  outline: none;
+}
+
 
 /* 
 ---------------------------------------------
@@ -700,6 +704,8 @@ banner
     height: 100%;
     img {
       height: 88%;
+      position: relative;
+      top: 3px;
     }
   }
 }
@@ -1106,6 +1112,14 @@ contact
 }
 .my-input, .my-area {
   width: 70%;
+  padding-bottom: 30px;
+  label {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    font-size: 20px;
+    text-transform: none;
+  }
 }
 
 .contact-form {
@@ -1678,8 +1692,14 @@ responsive
   .about .cta-content {
     justify-content: flex-end;
   }
+  .about-main-text {
+    padding: 0 10px;
+  }
   .cta-content {
     height: 420px;
+  }
+  .main-banner {
+    height: 95vh;
   }
   .main-banner .left h1 {
     font-size: 2.3rem;
@@ -1803,7 +1823,7 @@ responsive
   }
 }
 
-@media (max-width: 325px) {
+@media (max-width: 375px) {
   .main-banner .left h1 {
     padding-left: 23px;
   }

@@ -160,46 +160,6 @@ jQuery(document).ready(function (){
 	});
 });
 
-// Comment functionality 
-
-document
-    .querySelector('.comment_form')
-    .addEventListener('submit', function (event) {
-        event.preventDefault();
-        request.post(this, function (response, form) {
-            displayComment(response.entity.id, response.entity);
-            form.querySelector('input').value = '';
-            form.querySelector('textarea').value = '';
-        });
-    });
-
-request.get('https://skola-comment.000webhostapp.com/api.php?api=get', function (response) {
-    for (const [id, data] of Object.entries(response.entities) ) {
-        displayComment(id, data);
-    }
-});
-
-
-/**
- * Parāda uz ekrāna jau esošo komentāru
- */
-function displayComment(id, data) {
-    let comment_block = document.querySelector('#comment_list'),
-        template = comment_block.querySelector('.template'),
-        new_comment = template.cloneNode(true);
-        new_comment.classList.remove('template');
-
-    let description = new_comment.querySelector('.comment__description');
-    description.textContent = data.comment;
-
-    let author = new_comment.querySelector('.comment__author');
-    author.textContent = data.author;
-    
-    new_comment.setAttribute('data-id', id);
-
-    comment_block.prepend(new_comment);
-}
-
 function myScroll(event) {
 	event.preventDefault();
 	document.querySelector('#my-skills').scrollIntoView({ 
@@ -207,55 +167,3 @@ function myScroll(event) {
 	});
 }
 
-// Contact form functionality 
-
-jQuery(document).ready(function() {
-     
-    /*
-        Fullscreen background
-    */
-    $.backstretch("assets/fpv-drone.jpg");
-     
-    /*
-    Contact form
-    */
-    $('.contact-me form input[type="text"], .contact-me form textarea').on('focus', function() {
-        $('.contact-me form input[type="text"], .contact-me form textarea').removeClass('input-error');
-    });
-    $('.contact-me form').submit(function(e) {
-        e.preventDefault();
-        $('.contact-me form input[type="text"], .contact-me form textarea').removeClass('input-error');
-        var postdata = $('.contact-me form').serialize();
-        $.ajax({
-            type: 'POST',
-            url: 'https://skola-comment.000webhostapp.com/contact.php/',
-            data: postdata,
-            dataType: 'json',
-            success: function(json) {
-				if(json.nameMessage != '') {
-                    $('.contact-me form .contact-name').addClass('input-error');
-                }
-                if(json.emailMessage != '') {
-                    $('.contact-me form .contact-email').addClass('input-error');
-                }
-                if(json.subjectMessage != '') {
-                    $('.contact-me form .contact-subject').addClass('input-error');
-                }
-                if(json.messageMessage != '') {
-                    $('.contact-me form textarea').addClass('input-error');
-                }
-                if(json.antispamMessage != '') {
-                    $('.contact-me form .contact-antispam').addClass('input-error');
-                }
-                if(json.nameMessage == '' && json.emailMessage == '' && json.subjectMessage == '' && json.messageMessage == '' && json.antispamMessage == '') {
-                    $('.contact-me form').fadeOut('fast', function() {
-                        $('.contact-me').append('<p>Thanks for contacting us! We will get back to you very soon.</p>');
-                        // reload background
-                        $.backstretch("resize");
-                    });
-                }
-            }
-        });
-    });
-     
-});

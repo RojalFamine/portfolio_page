@@ -96,29 +96,34 @@
     <!-- ***** Contact Me Area Starts ***** -->
     <section class="section gradient-bg" id="contact-us">
       <div class="container contact-me">
-          <form id="contact" class="contact-form" role="form" action="https://skola-comment.000webhostapp.com/contact.php/" method="post">
+          <form id="contact" class="contact-form" role="form" action="https://skola-comment.000webhostapp.com/contact.php" method="post">
             <div class="container">
               <fieldset class="my-button button-dark my-input">
+                <label for="contact-name">Ur name</label>
                 <input name="name" type="text" id="contact-name" class="contact-name" placeholder="Your Name*" required="">
               </fieldset>
             </div>
             <div class="container">
               <fieldset class="my-button button-dark my-input">
+                <label for="contact-email">Email</label>
                 <input name="email" type="text" id="contact-email" class="contact-email" pattern="[^ @]*@[^ @]*" placeholder="Your Email*" required="">
               </fieldset>
             </div>
             <div class="container">
               <fieldset class="my-button button-dark my-input">
+                <label for="contact-subject">Subject</label>
                 <input name="subject" type="text" id="contact-subject" class="contact-subject" placeholder="Subject">
               </fieldset>
             </div>
             <div class="container">
               <fieldset class="my-button button-dark my-input">
+                <label for="contact-antispam">Antispam question: 7 + 5 = ?</label>
                 <input type="text" name="antispam" placeholder="Antispam question: 7 + 5 = ?" class="contact-antispam form-control" id="contact-antispam">
               </fieldset>
             </div>
             <div class="container">
               <fieldset class="my-button button-dark my-area">
+                <label for="contact-message">Message</label>
                 <textarea name="message" rows="6" id="contact-message" class="contact-message" placeholder="Message"></textarea>
               </fieldset>
             </div>
@@ -153,7 +158,7 @@
                     <a href="https://www.linkedin.com/in/m%C4%81rti%C5%86%C5%A1-heize-530124160/" target="_blank"><i class="fa fa-linkedin"></i></a>
                   </p>
                   <div class="my-button button-light">
-                      <a href="/assets/CV_Martins_Heize.pdf" download>Download CV</a>
+                    <a href="assets/CV_Martins_Heize.pdf" target="_blank">Download CV</a>
                   </div>
                 </div>
             </div>
@@ -177,6 +182,7 @@
     
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/contact.js"></script>
 
   </body>
 </html>
